@@ -1,0 +1,10 @@
+.nav-wrapper {
+    background-color: #46e3a5;
+}
+
+.app-logo {
+    margin-left: 30px;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+}
