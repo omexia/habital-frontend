@@ -1,19 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+import {HashRouter, Route, Switch} from 'react-router-dom';
 import './App.css';
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
 // Importamos materialize
 import 'materialize-css/dist/css/materialize.min.css';
+
+import PropertyManager from './pages/PropertyManager'
 
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <Navbar />
-          <body>todos somos amigos</body>
-        <Footer />
-      </div>
+      <HashRouter basename="/">
+        <div>
+          <Switch>
+            <Route exact path="/" component={ PropertyManager } />
+            <Route exact path="*" component={() => "404 NOT FOUND"} />
+          </Switch>
+        </div>
+      </HashRouter>
     );
   }
 }
