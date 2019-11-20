@@ -1,0 +1,16 @@
+.title {
+    margin-top: 5%;
+}
+
+.modal-close {
+    margin-right: 25%;
+}
+
+.modal .modal-footer .btn {
+    margin-right: 12px;
+}
+
+.table-container {
+    width: 85%;
+    margin-bottom: 5%;
+}

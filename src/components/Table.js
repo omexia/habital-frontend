@@ -8,9 +8,13 @@ class Table extends Component {
       <table class="striped responsive-table myTable">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Item Name</th>
-            <th>Item Price</th>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Propietario</th>
+            <th>Dirección</th>
+            <th>MTS<sup>2</sup></th>
+            <th>Valor Catastral</th>
+            <th>No. de Predial</th>
           </tr>
         </thead>
 
@@ -19,16 +23,121 @@ class Table extends Component {
             <td>Alvin</td>
             <td>Eclair</td>
             <td>$0.87</td>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
           </tr>
           <tr>
             <td>Alan</td>
             <td>Jellybean</td>
             <td>$3.76</td>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
           </tr>
           <tr>
             <td>Jonathan</td>
             <td>Lollipop</td>
             <td>$7.00</td>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td>Alan</td>
+            <td>Jellybean</td>
+            <td>$3.76</td>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>$7.00</td>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td>Alan</td>
+            <td>Jellybean</td>
+            <td>$3.76</td>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>$7.00</td>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td>Alan</td>
+            <td>Jellybean</td>
+            <td>$3.76</td>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>$7.00</td>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td>Alan</td>
+            <td>Jellybean</td>
+            <td>$3.76</td>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>$7.00</td>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
           </tr>
         </tbody>
       </table>

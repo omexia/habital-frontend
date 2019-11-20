@@ -12,7 +12,7 @@ class App extends React.Component {
       <HashRouter basename="/">
         <div>
           <Switch>
-            <Route exact path="/" component={ PropertyManager } />
+            <Route exact path="/homes" component={ PropertyManager } />
             <Route exact path="*" component={() => "404 NOT FOUND"} />
           </Switch>
         </div>
