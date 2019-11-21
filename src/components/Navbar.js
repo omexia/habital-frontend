@@ -6,9 +6,9 @@ class Navbar extends Component {
     render(){
         return(
             <nav>
-                <div class="nav-wrapper">
-                    <a href="#/homes" class="app-logo">habital</a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <div className="nav-wrapper">
+                    <a href="#/homes" className="app-logo">habital</a>
+                    <ul id="nav-mobile" className="right hide-on-med-and-down">
                         <li><Link className="nav-link" to="/login">Logout</Link></li>
                     </ul>
                 </div>

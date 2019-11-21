@@ -5,13 +5,55 @@ import Table from "../components/Table";
 import Modal from "../components/Modal";
 import "./PropertyManager.css";
 import M from "materialize-css";
+import { getHomes, saveHomes } from "../services/homesService";
 
 class PropertyManager extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      homes: []
+    };
+  }
+
+  // addHomeEvent(event){
+  //   event.preventDefault();
+  //   const {homeValue, homes} = this.state;
+  //   saveHomes({
+  //     home_name: homeValue,
+  //     home_owner: homeOwner
+  //   })
+  //   .then(data => {
+  //     if(data.success) {
+  //       this.setState({
+  //         tasks: [...tasks, taskValue],
+  //         taskValue: ''
+  //       });
+  //     }
+  //   });
+  // }
+
+  // onChange(event) {
+  //   console.log(event);
+  //   // const {taskValue} = this.state;
+  //   this.setState({
+  //     taskValue: event.target.value
+  //   });
+  // }
+
+  loadHomes() {
+    return getHomes().then(homes => {
+       this.setState({homes})
+    });
+  }
+
   componentDidMount() {
+    this.loadHomes();
     document.addEventListener("DOMContentLoaded", function() {
       var elems = document.querySelectorAll(".modal");
       var instances = M.Modal.init(elems);
     });
+    
   }
 
   render() {
@@ -19,24 +61,24 @@ class PropertyManager extends React.Component {
       <div>
         <Navbar />
         <div className="container table-container">
-          <h5 class="title">Mis propiedades</h5>
-          <a class="btn-floating btn-small waves-effect waves-light right modal-trigger" href="#modal">
-            <i class="material-icons">add</i>
+          <h5 className="title">Mis propiedades</h5>
+          <a className="btn-floating btn-small waves-effect waves-light right modal-trigger" href="#modal">
+            <i className="material-icons">add</i>
           </a>
-          <div class="modal modal-fixed-footer" id="modal">
-            <div class="modal-content">
+          <div className="modal modal-fixed-footer" id="modal">
+            <div className="modal-content">
               <Modal />
             </div>
-            <div class="modal-footer">
-              <a href="#/homes" class="modal-close waves-effect waves-green btn-flat">
+            <div className="modal-footer">
+              <a to="/homes" className="modal-close waves-effect waves-green btn-flat">
                 Cerrar
               </a>
-              <a href="#" class="btn waves-effect waves-green addBtn">
+              <a to="#" className="btn waves-effect waves-green addBtn">
                 Agregar
               </a>
             </div>
           </div>
-          <Table />
+          <Table allHomes={this.state.homes}/>
         </div>
         <Footer />
       </div>
