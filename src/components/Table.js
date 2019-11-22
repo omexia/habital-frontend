@@ -8,6 +8,7 @@ function ViewData(props) {
   const data2 = data.map((value, index) => {
     return <td width="2%" key={index}>{value}</td>;
   });
+  
 return (
   <tr>
     {data2}
@@ -16,7 +17,7 @@ return (
 
 function ListHomes (props) {
   const listData = props.allHomes;
-  const listMyDataPretty = listData.map((data, key) => {
+  const listMyDataPretty = listData.reverse().map((data, key) => {
     return <ViewData key={key} data={data} />;
   });
   return (
@@ -27,7 +28,6 @@ function ListHomes (props) {
 }
 
 function Table(props) {
-
   return (
     <div>
       <table className="striped responsive-table myTable">
